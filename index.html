@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Seating Chart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>磐田オフィス座席表</strong></li>
+        </ul>
+        <ul>
+            <li><button onclick="location.href='#add'">Add Employee</button></li>
+            <li><button onclick="location.href='#list'">Employee List</button></li>
+        </ul>
+    </nav>
+    <main class="container">
+
+        <h2 id="list">AI開発室メンバー</h2>
+        <table id="seatingChart">
+            <thead>
+                <tr>
+                    <th>名前</th>
+                    <th>階数</th>
+                    <th>日付</th>
+                    <th>アクション</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be injected here -->
+            </tbody>
+        </table>
+        <h2 id="add">新規メンバーの追加/更新</h2>
+        <form id="employeeForm">
+            <input type="text" id="employeeName" placeholder="Employee Name" required>
+            <input type="number" id="employeeFloor" placeholder="Floor" required>
+            
+            <button type="submit" class="primary">Submit</button>
+        </form>
+    </main>
+    <footer class="container">
+        <small>© 2024 AI会議室-座席表</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

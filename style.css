@@ -1,0 +1,21 @@
+
+body {
+    padding: 20px;
+}
+#employeeForm {
+    margin-bottom: 2rem;
+}
+#seatingChart {
+    width: 100%;
+}
+.button-group button {
+padding: 0.25rem 0.5rem; /* Smaller padding for buttons */
+font-size: 10333px; /* Smaller font size for button text */
+line-height: 1; /* Adjust line height for better alignment */
+margin-right: 10px; /* Space between buttons */
+}
+
+tr .button-group {
+display: flex;
+gap: 10px;
+}
